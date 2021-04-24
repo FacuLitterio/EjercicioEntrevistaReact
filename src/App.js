@@ -8,9 +8,8 @@ function App() {
   const [contratistas, setContratistas] = useState([]);
 
   const fetchContratistas = async () => {
-    const data = await fetch("https://smartcostpoc.azurewebsites.net/api/Contratistas?page=1&pageSize=10");
+    const data = await fetch("");
     const contratistasData = await data.json();
-    console.log(contratistasData);
     setContratistas(contratistasData);
   }
 
